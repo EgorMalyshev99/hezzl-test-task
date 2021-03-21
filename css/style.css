@@ -15,15 +15,17 @@
   margin: 20px 0 0 0;
   padding: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
   line-height: 19px;
-  background-color: rgb(182, 170, 170);
+  letter-spacing: 0;
+  color: #313643;
+  background-color: #F6F7FB;
 }
 
 .container {
   background-color: #fff;
-  max-width: 1100px;
+  width: 1100px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -32,6 +34,7 @@
 
 .content {
   padding-top: 20px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: 350px 650px;
   column-gap: 20px;
@@ -76,15 +79,17 @@
 
 .main-select {
   width: 100%;
-  padding: 10px;
+  height: 40px;
+  padding: 0 10px;
   position: relative;
-  color: #313643;
   background-color: #E6ECF5;
   border: 2px solid #E6ECF5;
   border-radius: 5px;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 0.01px;
+  display: flex;
+  align-items: center;
 }
 
 .main-select__wrapper {
@@ -103,6 +108,10 @@
   opacity: 0.6;
 }
 
+.name {
+  margin-bottom: 10px;
+}
+
 .name-rus__inner,
 .name-en__inner {
   margin-top: 10px;
@@ -113,7 +122,6 @@
   width: 38px;
   height: 40px;
   border-radius: 5px 0 0 5px;
-  color: #313643;
   background-color: #E6ECF5;
   display: flex;
   align-items: center;
@@ -131,5 +139,163 @@
 .name-input::-webkit-input-placeholder,
 .name-input::placeholder,
 .name-input::-moz-placeholder {
-  color: #fff;
+  color: #888EA7;
+  opacity: 0.6;
+}
+
+.input-file__inner {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.input-img {
+  display: none;
+}
+
+.input-link {
+  color: #22A4DC;
+  font-style: italic;
+}
+
+.input-img-label {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  background: url(../img/picture_icon.svg) no-repeat center;
+  background-size: 21px 21px;
+  background-color: #E6ECF5;
+  cursor: pointer;
+}
+
+.input-img-label__v2 {
+  position: relative;
+}
+
+.input-img-label__v2::after {
+  padding: 10px 30px;
+  content: "Загрузить";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #E6ECF5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-img__description {
+  margin: 50px 0 0 0;
+  color: #888EA7;
+  opacity: 0.6;
+}
+
+.label-img-text {
+  margin: 10px 30px;
+}
+
+.puzzle-description__inner {
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.horizontal,
+.vertical {
+  padding-left: 10px;
+  background-color: #E6ECF5;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+}
+
+.horizontal {
+  border-radius: 5px 0 0 5px;
+}
+
+.vertical {
+  border-radius: 0 5px 5px 0;
+}
+
+.amount-puzzle {
+  margin-left: 20px;
+}
+
+.question-one,
+.question-two {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-one-text,
+.question-two-text {
+  width: 130px;
+  margin: 0 20px 0 0;
+}
+
+.question-one-select__wrapper {
+  position: relative;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.question-one-select__wrapper::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: 11px;
+  top: 13px;
+  background-image: url(../img/down_ico.svg);
+}
+
+.question-one-select {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  border: 2px solid #E6ECF5;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+}
+
+.question-one-select-item {
+  background-color: #E6ECF5;
+}
+
+.question-two-input {
+  height: 100%;
+  padding-left: 10px;
+  color: #888EA7;
+  border: 2px solid #E6ECF5;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+.question-two-input::-webkit-input-placeholder,
+.question-two-input::placeholder,
+.question-two-input::-moz-placeholder {
+  color: #888EA7;
+  opacity: 0.6;
+}
+
+.question-three-answer {
+  height: 40px;
+  margin-top: 5px;
+  padding: 0 10px;
+  background-color: #E6ECF5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-three-answer span {
+  color: #313643;
+  opacity: 0.6;
 }

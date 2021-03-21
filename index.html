@@ -44,6 +44,46 @@
             <input type="text" class="name-input name-en" name="name-en" id="name-en-id" placeholder="Name">
           </div>
         </div>
+        <div class="puzzle-img">
+          <span>Картинка пазла</span>
+          <div class="input-file__inner">
+            <label for="input-img-id" class="input-img-label"></label>
+            <div class="input-img__wraper">
+              <label for="input-img-id" class="input-img-label__v2"></label>
+              <input class="input-img" type="file" name="input-img" id="input-img-id">
+              <p class="input-img__description">Или <a class="input-link" href="#">Выбрать из
+                  коллекции</a><br>разрешение 550*550</p>
+            </div>
+          </div>
+        </div>
+        <div class="puzzle-description">
+          <ruby>Сколько деталей у пазла</ruby>
+          <div class="puzzle-description__inner">
+            <div class="horizontal">по Горизонтали<ruby class="amount-puzzle">3</ruby></div>
+            <div class="vertical">по Вертикали<ruby class="amount-puzzle">3</ruby></div>
+          </div>
+        </div>
+        <div class="question-one">
+          <p class="question-one-text">Может ли награда выдавать купоны</p>
+          <div class="question-one-select__wrapper">
+            <select class="question-one-select" name="question-one-select" id="question-one-select-id">
+              <option value="q1" class="question-one-select-item" selected>Да</option>
+              <option value="q2" class="question-one-select-item">Нет</option>
+            </select>
+          </div>
+        </div>
+        <div class="question-two">
+          <p class="question-two-text">Сообщение при получении награды</p>
+          <input class="question-two-input" type="text" name="question-two-input" id="question-two-input-id"
+            placeholder="Введите значение">
+        </div>
+        <div class="question-three">
+          <ruby>Сколько раз может получить один игрок награду</ruby>
+          <div class="question-three-answer">
+            <span>1</span>
+            <span>Раз</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
