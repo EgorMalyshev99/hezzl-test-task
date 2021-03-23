@@ -456,7 +456,7 @@
 
 @media (max-width: 1200px) {
   .container {
-    width: 970px;
+    max-width: 970px;
     padding: 0 20px;
   }
 
@@ -471,14 +471,14 @@
 
 @media (max-width: 992px) {
   .container {
-    width: 750px;
+    max-width: 750px;
     padding: 0 10px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    max-width: none;
+    max-width: 580px;
     padding: 0 5px;
   }
 }
