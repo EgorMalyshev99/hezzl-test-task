@@ -256,11 +256,12 @@
 }
 
 .input-img-label__v2::after {
-  padding: 10px 30px;
+  padding: 9px 28px;
   content: "Загрузить";
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0.6;
   border: 2px solid #E6ECF5;
   border-radius: 5px;
   cursor: pointer;
@@ -430,7 +431,7 @@
 .timeout {
   position: relative;
   height: 40px;
-  padding: 0 10px;
+  padding-left: 10px;
   border-radius: 5px;
   background-color: #E6ECF5;
   opacity: 0.6;
@@ -451,10 +452,13 @@
   height: 100%;
   border: none;
   background-color: #E6ECF5;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .timeout-select {
-  width: 21%;
+  width: 22%;
   height: 100%;
   background-color: #E6ECF5;
   border: none;
@@ -500,6 +504,14 @@
   .horizontal,
   .vertical {
     padding-top: 10px;
+  }
+
+  .horizontal-input,
+  .vertical-input {
+    width: 140px;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
   }
 }
 
